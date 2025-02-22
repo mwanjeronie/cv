@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mwanje Ronnie - CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Mwanje Ronnie</h1>
+            <nav>
+                <ul class="nav-bar">
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact Information</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div style="height: 60px;"></div>
+    <main>
+        <aside class="overview">
+            <h2>Overview</h2>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#experience">Work Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact Information</a></li>
+            </ul>
+        </aside>
+        <div class="content">
+            <section id="about" class="card">
+                <h2>About Me</h2>
+                <p>I'm a full-stack developer in the making. I'm mostly self-taught, and I'm always learning. I'm currently learning JavaScript, React, Node.js, Solidity, Rust</p>
+            </section>
+            
+            <section id="hobbies" class="card">
+                <h2>Hobbies</h2>
+                <p>Here are some of my favorite hobbies:</p>
+                <ul>
+                    <li><strong>Favorite Audio Song:</strong> 
+                        <audio controls></audio>
+                            <source src="/assets/audio/Breaking Bad opening theme (guitar cover)(MP3_160K).mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                    </li>
+                    <li><strong>Favorite Music Video:</strong> 
+                        <video controls width="320" height="240">
+                            <source src="/assets/video/Breaking Bad opening theme (guitar cover)(360P).mp4" type="video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                    </li>
+                </ul>
+                <h3>Favorite Photos</h3>
+                <div class="photos">
+                    <img src="./assets/images/photo_2025-01-27_09-31-02.jpg" alt="Photo 1">
+                    <img src="/assets/images/photo_2025-01-27_09-31-57.jpg" alt="Photo 2">
+                    <img src="/assets/images/photo_2025-01-27_09-37-09.jpg" alt="Photo 3">
+                </div>
+            </section>
+            <section id="education" class="card">
+                <h2>Education</h2>
+                <ul>
+                    <li>Diploma in Computer Science, Makerere University Bussiness School (2024-2026)</li>
+                    <li>Relevant courses: Data Structures, Algorithms, Computer Systems</li>
+                </ul>
+            </section>
+            <section id="experience" class="card">
+                <h2>Work Experience</h2>
+                <table>
+                    <tr>
+                        <th>Position</th>
+                        <th>Company</th>
+                        <th>Duration</th>
+                        <th>Responsibilities</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Software Engineer</strong></td>
+                        <td>ABC Company</td>
+                        <td>2015-Present</td>
+                        <td>
+                            <ul>
+                                <li>Developed multiple software applications using Java and Python</li>
+                                <li>Collaborated with cross-functional teams to deliver projects on time</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><strong>Data Analyst</strong></td>
+                        <td>DEF Company</td>
+                        <td>2014-2015</td>
+                        <td>
+                            <ul>
+                                <li>Analyzed large datasets to identify trends and insights</li>
+                                <li>Created data visualizations using Tableau and Power BI</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <section id="skills" class="card">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming languages:</strong> Java, Python, JavaScript</li>
+                    <li><strong>Software proficiency:</strong> Microsoft Office, Adobe Creative Suite</li>
+                    <li><strong>Technical skills:</strong> Data analysis, machine learning, web development</li>
+                </ul>
+            </section>
+            <section id="contact" class="card">
+                <h2>Contact Information</h2>
+                <ul>
+                    <li>Address: Banda</li>
+                    <li>Phone: +256754547888</li>
+                    <li>Email: <a href="mailto:ronniemwanje94@gmail.com">ronniemwanje94@gmail.com</a></li>
+                    <li>LinkedIn: <a href="https://www.linkedin.com/in/mwanjeronnie/">linkedin.com/in/mwanjeronnie</a></li>
+                </ul>
+                <br>
+                <h1>Contact Me</h1>
+                <p>Feel free to reach out to me for any inquiries or job opportunities.</p>
+                <form action="/submit_contact" method="post" enctype="multipart/form-data">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br><br>
+                    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                    
+                    <label for="file">Upload Appointment letter:</label>
+                    <input type="file" id="file" name="file" accept=".pdf,.doc,.docx"><br><br>
+                    
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Mwanje Ronnie
+    </footer>
+</body>
+</html>
